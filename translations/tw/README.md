@@ -98,7 +98,7 @@ CO_OP_TRANSLATOR_METADATA:
 | 語言                | 代碼 | 翻譯版README連結                                    | 最後更新日期   |
 |---------------------|------|-----------------------------------------------------|----------------|
 | 簡體中文            | zh   | [Chinese Translation](../zh/README.md)  | 2025-03-24     |
-| 繁體中文            | tw   | [Chinese Translation](./README.md)  | 2025-02-13     |
+| 繁體中文            | tw   | [Chinese Translation](./README.md)  | 2025-03-28     |
 | 香港中文            | hk   | [Chinese (Hong Kong) Translation](../hk/README.md) | 2025-03-28     |
 | 法文                | fr   | [French Translation](../fr/README.md)   | 2025-03-28     |
 | 日文                | ja   | [Japanese Translation](../ja/README.md) | 2025-03-28     |
