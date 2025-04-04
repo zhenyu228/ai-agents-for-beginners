@@ -99,16 +99,16 @@ Wenn Sie nicht weiterkommen oder Fragen zum Aufbau von KI-Agenten haben, treten 
 | Sprache              | Code | Link zur übersetzten README                            | Letzte Aktualisierung |
 |----------------------|------|--------------------------------------------------------|------------------------|
 | Chinesisch (vereinfacht) | zh   | [Chinesische Übersetzung](../zh/README.md) | 24.03.2025            |
-| Chinesisch (traditionell)| tw   | [Chinesische Übersetzung](../tw/README.md) | 13.02.2025            |
-| Chinesisch (Hongkong) | hk   | [Chinesische (Hongkong) Übersetzung](../hk/README.md) | 13.02.2025            |
-| Französisch           | fr   | [Französische Übersetzung](../fr/README.md) | 13.02.2025            |
-| Japanisch             | ja   | [Japanische Übersetzung](../ja/README.md)  | 13.02.2025            |
-| Koreanisch            | ko   | [Koreanische Übersetzung](../ko/README.md) | 13.02.2025            |
-| Portugiesisch         | pt   | [Portugiesische Übersetzung](../pt/README.md) | 13.02.2025            |
-| Spanisch              | es   | [Spanische Übersetzung](../es/README.md)   | 13.02.2025            |
-| Deutsch               | de   | [Deutsche Übersetzung](./README.md)   | 13.02.2025            |
-| Persisch              | fa   | [Persische Übersetzung](../fa/README.md)  | 26.03.2025            |
-| Polnisch              | pl   | [Polnische Übersetzung](../pl/README.md)  | 26.03.2025            |
+| Chinesisch (traditionell)| tw   | [Chinesische Übersetzung](../tw/README.md) |28.03.2025            |
+| Chinesisch (Hongkong) | hk   | [Chinesische (Hongkong) Übersetzung](../hk/README.md) | 28.03.2025            |
+| Französisch           | fr   | [Französische Übersetzung](../fr/README.md) | 28.03.2025            |
+| Japanisch             | ja   | [Japanische Übersetzung](../ja/README.md)  | 28.03.2025            |
+| Koreanisch            | ko   | [Koreanische Übersetzung](../ko/README.md) | 28.03.2025            |
+| Portugiesisch         | pt   | [Portugiesische Übersetzung](../pt/README.md) |28.03.2025            |
+| Spanisch              | es   | [Spanische Übersetzung](../es/README.md)   | 28.03.2025            |
+| Deutsch               | de   | [Deutsche Übersetzung](./README.md)   | 28.03.2025            |
+| Persisch              | fa   | [Persische Übersetzung](../fa/README.md)  | 28.03.2025            |
+| Polnisch              | pl   | [Polnische Übersetzung](../pl/README.md)  | 28.03.2025            |
 
 ## 🎒 Weitere Kurse
 

@@ -99,16 +99,16 @@ Jeśli utkniesz lub masz pytania dotyczące tworzenia agentów AI, dołącz do n
 | Język               | Kod  | Link do przetłumaczonego README                          | Ostatnia aktualizacja |
 |---------------------|------|---------------------------------------------------------|-----------------------|
 | Chiński (uproszczony) | zh   | [Chińskie tłumaczenie](../zh/README.md)     | 2025-03-24           |
-| Chiński (tradycyjny) | tw   | [Chińskie tłumaczenie](../tw/README.md)     | 2025-02-13           |
-| Chiński (Hongkong)   | hk   | [Chińskie (Hongkong) tłumaczenie](../hk/README.md) | 2025-02-13           |
-| Francuski            | fr   | [Francuskie tłumaczenie](../fr/README.md)   | 2025-02-13           |
-| Japoński             | ja   | [Japońskie tłumaczenie](../ja/README.md)    | 2025-02-13           |
-| Koreański            | ko   | [Koreańskie tłumaczenie](../ko/README.md)   | 2025-02-13           |
-| Portugalski          | pt   | [Portugalskie tłumaczenie](../pt/README.md) | 2025-02-13           |
-| Hiszpański           | es   | [Hiszpańskie tłumaczenie](../es/README.md)  | 2025-02-13           |
-| Niemiecki            | de   | [Niemieckie tłumaczenie](../de/README.md)   | 2025-02-13           |
-| Perski               | fa   | [Perskie tłumaczenie](../fa/README.md)     | 2025-03-26           |
-| Polski               | pl   | [Polskie tłumaczenie](./README.md)     | 2025-03-26           |
+| Chiński (tradycyjny) | tw   | [Chińskie tłumaczenie](../tw/README.md)     | 2025-03-28           |
+| Chiński (Hongkong)   | hk   | [Chińskie (Hongkong) tłumaczenie](../hk/README.md) | 2025-03-28           |
+| Francuski            | fr   | [Francuskie tłumaczenie](../fr/README.md)   | 2025-03-28           |
+| Japoński             | ja   | [Japońskie tłumaczenie](../ja/README.md)    | 2025-03-28           |
+| Koreański            | ko   | [Koreańskie tłumaczenie](../ko/README.md)   | 2025-03-28           |
+| Portugalski          | pt   | [Portugalskie tłumaczenie](../pt/README.md) | 2025-03-28           |
+| Hiszpański           | es   | [Hiszpańskie tłumaczenie](../es/README.md)  | 2025-03-28           |
+| Niemiecki            | de   | [Niemieckie tłumaczenie](../de/README.md)   | 2025-03-28           |
+| Perski               | fa   | [Perskie tłumaczenie](../fa/README.md)     | 2025-03-28           |
+| Polski               | pl   | [Polskie tłumaczenie](./README.md)     | 2025-03-28           |
 
 ## 🎒 Inne kursy
 
