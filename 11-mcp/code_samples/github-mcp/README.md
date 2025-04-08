@@ -7,7 +7,7 @@ This was a demo created for the AI Agents Hackathon hosted through the Microsoft
 The tools is used to recommend hackathon projects based on a user's Github repos.
 This is done by:
 
-1. **Github Agent** - Using the Github MCP Server to reterive repos and information about those repos.
+1. **Github Agent** - Using the Github MCP Server to retrieve repos and information about those repos.
 2. **Hackathon Agent** - Takes the data from the Github Agent and comes up with creative hackathon project ideas based on the projects, languages used by the user and the project tracks for the AI Agents hackathon.
 3. **Events Agent** - Based on the hackathon agents suggestion, the events agent will reccomend relevant events from the AI Agent Hackathon series. 
 
