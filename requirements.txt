@@ -13,3 +13,6 @@ autogen-ext==0.4.5
 pydantic 
 chromadb ~= 0.6.3
 azure-search-documents~=11.5.2
+mcp[cli]
+semantic-kernel[mcp]
+chainlit
