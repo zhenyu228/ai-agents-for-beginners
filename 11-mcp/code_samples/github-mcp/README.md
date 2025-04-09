@@ -44,7 +44,7 @@ This should start your Chainlit server on `localhost:8000` as well as populate y
 
 To connect to the Github MCP Server, select the "plug" icon underneath the "Type your message here.." chat box:
 
-![MCP Connect](./github-mcp/images/mcp-chainlit-1.png)
+![MCP Connect](./images/mcp-chainlit-1.png)
 
 From there you can click on the "Connect an MCP" to add the command to connect to the Github MCP Server:
 
