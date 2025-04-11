@@ -1,0 +1,163 @@
+<mxfile host="65bd71144e">
+    <diagram id="x2jkbq8QokLOw1bPOBPE" name="Page-1">
+        <mxGraphModel dx="3204" dy="2629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="17" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="-1350" y="-400" width="250" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;" vertex="1" parent="17">
+                    <mxGeometry x="20" width="210" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Comic Sans MS&quot;&gt;&lt;b style=&quot;&quot;&gt;Kernel&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#dae8fc;sketch=1;strokeColor=#6c8ebf;" vertex="1" parent="17">
+                    <mxGeometry x="65" y="50" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <UserObject label="&lt;div style=&quot;line-height: 18px; white-space: pre;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Comic Sans MS&quot;&gt;from semantic_kernel.kernel import Kernel&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;line-height: 18px; white-space: pre;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot; face=&quot;Comic Sans MS&quot;&gt;&lt;div style=&quot;line-height: 18px;&quot;&gt;kernel = Kernel()&lt;/div&gt;&lt;/font&gt;&lt;/div&gt;" placeholders="1" name="Variable" id="3">
+                    <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;labelBackgroundColor=none;labelBorderColor=none;textShadow=1;fontColor=default;" vertex="1" parent="17">
+                        <mxGeometry y="110" width="250" height="50" as="geometry"/>
+                    </mxCell>
+                </UserObject>
+                <mxCell id="16" value="&lt;b style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;;&quot;&gt;Create a Kernel First&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="17">
+                    <mxGeometry x="50" y="10" width="150" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;sketch=1;curveFitting=1;jiggle=2;shape=flexArrow;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="18">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1140" y="-450" as="sourcePoint"/>
+                        <mxPoint x="-510" y="-860" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;kernal.add_service(chat_complete_service)&lt;/font&gt;" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=default;textShadow=0;rotation=0;html=1;fontSize=14;" vertex="1" connectable="0" parent="38">
+                    <mxGeometry x="0.258" y="4" relative="1" as="geometry">
+                        <mxPoint x="-47" y="17" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="-490" y="-990" width="300" height="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;" vertex="1" parent="40">
+                    <mxGeometry width="300" height="540" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="group" vertex="1" connectable="0" parent="40">
+                    <mxGeometry x="30" y="60" width="240" height="442.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="group" vertex="1" connectable="0" parent="33">
+                    <mxGeometry y="250" width="240" height="192.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;strokeColor=light-dark(#ae4132, #ededed);" vertex="1" parent="30">
+                    <mxGeometry width="240" height="192.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;div style=&quot;line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;span&gt;config OpenAIChatCompletion&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=default;labelBackgroundColor=none;textShadow=0;fontSize=12;fontFamily=Comic Sans MS;fontStyle=1" vertex="1" parent="30">
+                    <mxGeometry x="25" y="7.5" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;b&gt;OpenAIChatCompletion&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#fad9d5;sketch=1;strokeColor=#ae4132;" vertex="1" parent="30">
+                    <mxGeometry x="42.5" y="37.5" width="155" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;div style=&quot;line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;div&gt;&lt;span&gt;chat_complete_service&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;OpenAIChatCompletion&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;ai_model_id&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&quot;gpt-4o-mini&quot;&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;async_client&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;client&lt;/span&gt;&lt;span&gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;service_id&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;service_id&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=default;labelBackgroundColor=none;fontSize=9;fontFamily=Comic Sans MS;textShadow=1;" vertex="1" parent="30">
+                    <mxGeometry x="5" y="97.5" width="230" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="group" vertex="1" connectable="0" parent="33">
+                    <mxGeometry width="240" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;strokeColor=light-dark(#a93e32, #ededed);" vertex="1" parent="31">
+                    <mxGeometry width="240" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="&lt;b style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;;&quot;&gt;Create a AsyncOpenAI Client&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="31">
+                    <mxGeometry x="20" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;b style=&quot;text-wrap-mode: nowrap; font-family: &amp;quot;Comic Sans MS&amp;quot;; color: rgb(63, 63, 63);&quot;&gt;AsyncOpenAI Client&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#fad9d5;sketch=1;strokeColor=#ae4132;" vertex="1" parent="31">
+                    <mxGeometry x="55" y="30" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;div style=&quot;line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;span&gt;from&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;openai&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;import&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;AsyncOpenAI&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;labelBackgroundColor=none;fontColor=default;fontFamily=Comic Sans MS;textShadow=1;fontSize=10;" vertex="1" parent="31">
+                    <mxGeometry x="40" y="90" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;div style=&quot;line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;div&gt;&lt;span&gt;client&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;AsyncOpenAI&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &lt;/span&gt;&lt;span&gt;api_key&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;os&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;environ&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;get&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;&quot;GITHUB_TOKEN&quot;&lt;/span&gt;&lt;span&gt;),&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;base_url&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;&quot;https://models.inference.ai.azure.com/&quot;&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=default;labelBackgroundColor=none;textShadow=1;fontSize=9;fontFamily=Comic Sans MS;" vertex="1" parent="31">
+                    <mxGeometry y="105" width="240" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="33">
+                    <mxGeometry x="106.66000000000001" y="201.25" width="26.67" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;AI Service&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="40">
+                    <mxGeometry x="90" y="10" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="-500" y="-350" width="500" height="740" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;" vertex="1" parent="64">
+                    <mxGeometry width="500" height="740" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Plugin&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="64">
+                    <mxGeometry x="215" y="9" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="64">
+                    <mxGeometry x="30" y="60" width="440" height="380" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="&lt;b style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Plugin 1&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fillStyle=auto;" vertex="1" parent="64">
+                    <mxGeometry x="210" y="60" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;Function 1&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#b0e3e6;sketch=1;strokeColor=#0e8088;" vertex="1" parent="64">
+                    <mxGeometry x="105" y="100" width="290" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="&lt;div style=&quot;line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;@kernel_function(description=&quot;获取一个随机的度假目的地。&quot;)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;    def get_random_destination(self) -&amp;gt; Annotated[str, &quot;返回随机选择的一个目的地。&quot;]:&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=default;labelBackgroundColor=none;textShadow=1;fontFamily=Comic Sans MS;" vertex="1" parent="64">
+                    <mxGeometry x="55" y="160" width="390" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;Function 2&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#b0e3e6;sketch=1;strokeColor=#0e8088;" vertex="1" parent="64">
+                    <mxGeometry x="105" y="230" width="290" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 31px;&quot;&gt;...&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=90;" vertex="1" parent="64">
+                    <mxGeometry x="236" y="290" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;b&gt;Function n&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#b0e3e6;sketch=1;strokeColor=#0e8088;" vertex="1" parent="64">
+                    <mxGeometry x="105" y="340" width="290" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Comic Sans MS&quot;&gt;&lt;b style=&quot;&quot;&gt;Plugin 2&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="64">
+                    <mxGeometry x="30" y="460" width="440" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 31px;&quot;&gt;...&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=90;" vertex="1" parent="64">
+                    <mxGeometry x="241" y="550" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Comic Sans MS&quot;&gt;&lt;b style=&quot;&quot;&gt;Plugin n&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;sketch=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="64">
+                    <mxGeometry x="30" y="590" width="440" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;sketch=1;curveFitting=1;jiggle=2;shape=flexArrow;" edge="1" parent="1" target="41">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-1120" y="-312" as="sourcePoint"/>
+                        <mxPoint x="-554.5" y="141.36000000000013" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="&lt;div style=&quot;line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=default;textShadow=0;rotation=0;html=1;labelBackgroundColor=none;fontFamily=Comic Sans MS;fontSize=14;" vertex="1" connectable="0" parent="65">
+                    <mxGeometry x="0.258" y="4" relative="1" as="geometry">
+                        <mxPoint x="-99" y="97" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="69" value="&lt;font style=&quot;font-size: 16px;&quot; face=&quot;Comic Sans MS&quot;&gt;&lt;b style=&quot;&quot;&gt;Setting&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=2;hachureGap=8;fillColor=#e1d5e7;fillStyle=dots;sketch=1;strokeColor=#9673a6;" vertex="1" parent="1">
+                    <mxGeometry x="-1350" y="660" width="250" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;arrowWidth=0.3650120590672335;arrowSize=0.08052319978412868;" vertex="1" parent="1">
+                    <mxGeometry x="-1252.5" y="-170" width="55" height="790" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="&lt;div style=&quot;line-height: 18px; white-space-collapse: preserve;&quot;&gt;&lt;div&gt;&lt;span&gt;settings&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;kernel&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;get_prompt_execution_settings_from_service_id&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;service_id&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;service_id&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;settings&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;function_choice_behavior&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;FunctionChoiceBehavior&lt;/span&gt;&lt;span&gt;.&lt;/span&gt;&lt;span&gt;Auto&lt;/span&gt;&lt;span&gt;()&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=default;labelBackgroundColor=none;fontFamily=Comic Sans MS;fontSize=9;textShadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1420" y="820" width="410" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="" style="shape=actor;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="-388.34000000000003" y="500" width="276.67" height="415" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="&lt;b&gt;&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 18px;&quot;&gt;Agent&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-285" y="565" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="&lt;b&gt;&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 14px;&quot;&gt;ChatCompletionAgent&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#f8cecc;sketch=1;strokeColor=#b85450;" vertex="1" parent="1">
+                    <mxGeometry x="-335.01" y="710" width="170.01" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.3221959431966146;arrowSize=0.0728521608838848;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+                    <mxGeometry x="-1070" y="720" width="730" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="&lt;div style=&quot;font-weight: normal; line-height: 18px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;span&gt;arguments&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;KernelArguments&lt;/span&gt;&lt;span&gt;(&lt;/span&gt;&lt;span&gt;settings&lt;/span&gt;&lt;span&gt;=&lt;/span&gt;&lt;span&gt;settings&lt;/span&gt;&lt;span&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontColor=default;labelBackgroundColor=none;fontFamily=Comic Sans MS;fontSize=12;textShadow=1;" vertex="1" parent="1">
+                    <mxGeometry x="-870" y="700" width="350" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;kernel&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;add_plugin&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;plugin&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;DestinationPlugin&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;(), &lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;plugin_name&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;&quot;DestinationPlugin&quot;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); font-family: &amp;quot;Comic Sans MS&amp;quot;; font-size: 13px; white-space-collapse: preserve; background-color: rgb(255, 255, 255);&quot;&gt;)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="-1020" y="-140" width="500" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
