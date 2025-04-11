@@ -570,93 +570,94 @@ Este servicio está actualmente en Public Preview y admite Python y C# para la c
 
 Usando Semantic Kernel Python, podemos crear un agente de Azure AI con un plugin definido por el usuario:
 
-```python
+``` python
+# Semantic Kernel Python Example
+
 import asyncio
 from typing import Annotated
 
-from azure.identity.aio import DefaultAzureCredential
+from semantic_kernel.connectors.ai import FunctionChoiceBehavior
+from semantic_kernel.connectors.ai.open_ai import AzureChatCompletion, AzureChatPromptExecutionSettings
+from semantic_kernel.contents import ChatHistory
+from semantic_kernel.functions import kernel_function
+from semantic_kernel.kernel import Kernel
 
-from semantic_kernel.agents.azure_ai import AzureAIAgent, AzureAIAgentSettings
-from semantic_kernel.contents.chat_message_content import ChatMessageContent
-from semantic_kernel.contents.utils.author_role import AuthorRole
-from semantic_kernel.functions.kernel_function_decorator import kernel_function
-
-
-# Define a sample plugin for the sample
-class MenuPlugin:
-    """A sample Menu Plugin used for the concept sample."""
-
-    @kernel_function(description="Provides a list of specials from the menu.")
-    def get_specials(self) -> Annotated[str, "Returns the specials from the menu."]:
-        return """
-        Special Soup: Clam Chowder
-        Special Salad: Cobb Salad
-        Special Drink: Chai Tea
-        """
-
-    @kernel_function(description="Provides the price of the requested menu item.")
-    def get_item_price(
-        self, menu_item: Annotated[str, "The name of the menu item."]
-    ) -> Annotated[str, "Returns the price of the menu item."]:
-        return "$9.99"
+# Define a ChatHistory object to hold the conversation's context
+chat_history = ChatHistory()
+chat_history.add_user_message("I'd like to go to New York on January 1, 2025")
 
 
-async def main() -> None:
-    ai_agent_settings = AzureAIAgentSettings.create()
+# Define a sample plugin that contains the function to book travel
+class BookTravelPlugin:
+    """A Sample Book Travel Plugin"""
 
-    async with (
-        DefaultAzureCredential() as creds,
-        AzureAIAgent.create_client(
-            credential=creds,
-            conn_str=ai_agent_settings.project_connection_string.get_secret_value(),
-        ) as client,
-    ):
-        # Create agent definition
-        agent_definition = await client.agents.create_agent(
-            model=ai_agent_settings.model_deployment_name,
-            name="Host",
-            instructions="Answer questions about the menu.",
-        )
+    @kernel_function(name="book_flight", description="Book travel given location and date")
+    async def book_flight(
+        self, date: Annotated[str, "The date of travel"], location: Annotated[str, "The location to travel to"]
+    ) -> str:
+        return f"Travel was booked to {location} on {date}"
 
-        # Create the AzureAI Agent using the defined client and agent definition
-        agent = AzureAIAgent(
-            client=client,
-            definition=agent_definition,
-        )
+# Create the Kernel
+kernel = Kernel()
 
-        # Add the sample plugin to the kernel
-        agent.kernel.add_plugin(MenuPlugin(), plugin_name="menu")
+# Add the sample plugin to the Kernel object
+kernel.add_plugin(BookTravelPlugin(), plugin_name="book_travel")
 
-        # Create a new thread
-        thread = await client.agents.create_thread()
+# Define the Azure OpenAI AI Connector
+chat_service = AzureChatCompletion(
+    deployment_name="YOUR_DEPLOYMENT_NAME", 
+    api_key="YOUR_API_KEY", 
+    endpoint="https://<your-resource>.azure.openai.com/",
+)
 
-        user_inputs = [
-            "Hello",
-            "What is the special soup?",
-            "How much does that cost?",
-            "Thank you",
-        ]
+# Define the request settings to configure the model with auto-function calling
+request_settings = AzureChatPromptExecutionSettings(function_choice_behavior=FunctionChoiceBehavior.Auto())
 
-        try:
-            for user_input in user_inputs:
-                # Add the user input as a chat message
-                await agent.add_chat_message(
-                    thread_id=thread.id, message=ChatMessageContent(role=AuthorRole.USER, content=user_input)
-                )
-                print(f"# User: '{user_input}'")
-                # Invoke the agent for the specified thread
-                async for content in agent.invoke(
-                    thread_id=thread.id,
-                ):
-                    print(f"# Agent: {content.content}")
-        finally:
-            await client.agents.delete_thread(thread.id)
-            await client.agents.delete_agent(agent.id)
+
+async def main():
+    # Make the request to the model for the given chat history and request settings
+    # The Kernel contains the sample that the model will request to invoke
+    response = await chat_service.get_chat_message_content(
+        chat_history=chat_history, settings=request_settings, kernel=kernel
+    )
+    assert response is not None
+
+    """
+    Note: In the auto function calling process, the model determines it can invoke the 
+    `BookTravelPlugin` using the `book_flight` function, supplying the necessary arguments. 
+    
+    For example:
+
+    "tool_calls": [
+        {
+            "id": "call_abc123",
+            "type": "function",
+            "function": {
+                "name": "BookTravelPlugin-book_flight",
+                "arguments": "{'location': 'New York', 'date': '2025-01-01'}"
+            }
+        }
+    ]
+
+    Since the location and date arguments are required (as defined by the kernel function), if the 
+    model lacks either, it will prompt the user to provide them. For instance:
+
+    User: Book me a flight to New York.
+    Model: Sure, I'd love to help you book a flight. Could you please specify the date?
+    User: I want to travel on January 1, 2025.
+    Model: Your flight to New York on January 1, 2025, has been successfully booked. Safe travels!
+    """
+
+    print(f"`{response}`")
+    # Example AI Model Response: `Your flight to New York on January 1, 2025, has been successfully booked. Safe travels! ✈️🗽`
+
+    # Add the model's response to our chat history context
+    chat_history.add_assistant_message(response.content)
 
 
 if __name__ == "__main__":
     asyncio.run(main())
-```  
+```
 
 ### Conceptos clave
 
