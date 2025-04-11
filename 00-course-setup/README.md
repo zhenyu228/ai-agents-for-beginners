@@ -23,7 +23,7 @@ You should now have your own forked version of this course in the following link
 
 ## Retrieve Your GitHub Personal Access Token (PAT)
 
-Currently, this course uses the Github Models Marketplace to offer free access to Large Language Models(LLMs) that will be used to create AI Agents.
+Currently, this course uses the Github Models Marketplace to offer free access to Large Language Models (LLMs) that will be used to create AI Agents.
 
 To access this service, you will need to create a GitHub Personal Access Token.
 
